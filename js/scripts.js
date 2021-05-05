@@ -1,4 +1,7 @@
-const customName = document.getElementById('customname');
+console.log('Hello from js/scripts.js!');
+
+const customNameA = document.getElementById('customNameA');
+const customNameB = document.getElementById('customNameB');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
@@ -7,44 +10,48 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-
-
 let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-
-let insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
-
-let insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
-
-let insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
-
-
-
+let insertW = [''];
+let insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
+let insertY = ['the soup kitchen','Disneyland','the White House'];
+let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
 
 randomize.addEventListener('click', result);
 
 function result() {
   let newStory = storyText;
 
+  let wItem = randomValueFromArray(insertW);
   let xItem = randomValueFromArray(insertX);
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
 
+  newStory = newStory.replace(':insertw:',wItem);
+  newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
-  newStory = newStory.replace(':insertx:',xItem);
 
-  if(customName.value !== '') {
-    let name = customName.value;
-    newStory = newStory.replace('Bob', name);
+  if(customNameA.value !== '') {
+    const name = customNameA.value;
+    newStory = newStory.replace('Bob',name);
   }
+
+  if(customNameB.value !== '') {
+    const name = customNameB.value;
+    newStory = newStory.replace('Jim',name);
+  }
+
+
 
   if(document.getElementById("uk").checked) {
-    let weight = Math.round(300*0.0714286) + ' stone';
-    let temperature =  Math.round((94-32) * 5/9 ) + ' centigrade';
-    newStory = newStory.replace('300 pounds', weight);
-    newStory = newStory.replace('94 fahrenheit', temperature);
+    const weight = Math.round(300*0.0714286) + ' stone';
+    const temperature =  Math.round((94-32) * 5 / 9) + ' centigrade';
+    newStory = newStory.replace('94 fahrenheit',temperature);
+    newStory = newStory.replace('300 pounds',weight);
   }
+
+
 
   story.textContent = newStory;
   story.style.visibility = 'visible';

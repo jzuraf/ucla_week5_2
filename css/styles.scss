@@ -1,24 +1,71 @@
 body {
-      font-family: helvetica, sans-serif;
-      width: 350px;
-    }
+  background: #333 url(../images/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 3rem;
+  font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+  font-family: 'Helvetica', sans-serif;
+}
+
+img {
+  max-height: 15rem;
+}
+
+main {
+  background-color: transparent;
+  margin: 20px 50px 20px 50px;
+  padding: 10px 10px 10px 10px;
+}
+
+footer {
+  padding: 10px;
+  font-size: 12px;
+}
+
+button {
+  background-color: #5eb27f;
+  color: #fff;
+  border: 2px solid #489b5f;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #489b5f;
+  color: #fff;
+  border: 2px solid #489b5f;
+}
+
+.navbar-brand {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.starter-template {
+  background-color: transparent;
+  margin: 0px 50px 0px 50px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.story {
+  border: 2px solid #489b5f;
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 5px;
+  visibility: hidden;
+  color: #489b5f
+}
 
 label {
   font-weight: bold;
 }
 
-div {
-  padding-bottom: 20px;
-}
-
 input[type="text"] {
   padding: 5px;
   width: 150px;
-}
-
-p {
-  background: #FFC125;
-  color: #5E2612;
-  padding: 10px;
-  visibility: hidden;
 }
