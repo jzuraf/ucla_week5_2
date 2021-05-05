@@ -22,16 +22,16 @@ footer {
   font-size: 12px; }
 
 button {
-  background-color: #5eb27f;
+  background-color: red;
   color: #fff;
-  border: 2px solid #489b5f;
+  border: 2px solid red;
   border-radius: 5px;
   padding: 10px; }
 
 button:hover {
-  background-color: #489b5f;
+  background-color: red;
   color: #fff;
-  border: 2px solid #489b5f; }
+  border: 2px solid red; }
 
 .navbar-brand {
   font-family: 'Helvetica', sans-serif; }
@@ -43,13 +43,14 @@ button:hover {
   text-align: center; }
 
 .story {
-  border: 2px solid #489b5f;
+  background-color: white;
+  border: 2px solid red;
   padding: 20px;
   margin: 30px;
   text-align: center;
   border-radius: 5px;
   visibility: hidden;
-  color: #489b5f; }
+  color: red; }
 
 label {
   font-weight: bold; }
