@@ -4,10 +4,12 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 3rem;
-  font-family: 'Helvetica', sans-serif; }
+  font-family: 'Helvetica', sans-serif;
+  color: white; }
 
 h1 {
-  font-family: 'Helvetica', sans-serif; }
+  font-family: 'Helvetica', sans-serif;
+  color: white; }
 
 img {
   max-height: 15rem; }
@@ -29,12 +31,13 @@ button {
   padding: 10px; }
 
 button:hover {
-  background-color: red;
-  color: #fff;
-  border: 2px solid red; }
+  background-color: #fff;
+  color: red;
+  border: 2px solid #fff; }
 
 .navbar-brand {
-  font-family: 'Helvetica', sans-serif; }
+  font-family: 'Helvetica', sans-serif;
+  background-color: transparent; }
 
 .starter-template {
   background-color: transparent;
@@ -53,7 +56,8 @@ button:hover {
   color: red; }
 
 label {
-  font-weight: bold; }
+  font-weight: bold;
+  color: white; }
 
 input[type="text"] {
   padding: 5px;

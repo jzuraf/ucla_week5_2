@@ -5,10 +5,12 @@ body {
   text-align: center;
   padding-top: 3rem;
   font-family: 'Helvetica', sans-serif;
+  color: white;
 }
 
 h1 {
   font-family: 'Helvetica', sans-serif;
+  color: white;
 }
 
 img {
@@ -35,13 +37,14 @@ button {
 }
 
 button:hover {
-  background-color: red;
-  color: #fff;
-  border: 2px solid red;
+  background-color: #fff;
+  color: red;
+  border: 2px solid #fff;
 }
 
 .navbar-brand {
   font-family: 'Helvetica', sans-serif;
+  background-color: transparent;
 }
 
 .starter-template {
@@ -64,6 +67,7 @@ button:hover {
 
 label {
   font-weight: bold;
+  color: white;
 }
 
 input[type="text"] {

@@ -10,11 +10,11 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+let storyText = 'It was 94 fahrenheit outside, when :insertx: was murdered at :inserty:. Jim, the detective on the case, believed the suspect in question, Bob, used a :insertz: to complete the murder. Along with the :insertz: that was found at the crime scene, there were also large footprints left behind. Bob weighs 300 pounds and is 7 feet tall, could he have done it?';
 let insertW = [''];
-let insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
-let insertY = ['the soup kitchen','Disneyland','the White House'];
-let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
+let insertX = ['Sandra','Peter','Donna','Sunny'];
+let insertY = ['the park','Disneyland','the White House','the beach'];
+let insertZ = ['banjo','rubber duck','potato peeler','burrito'];
 
 randomize.addEventListener('click', result);
 
@@ -26,10 +26,9 @@ function result() {
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
 
-  newStory = newStory.replace(':insertw:',wItem);
-  newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':insertz:',zItem);
   newStory = newStory.replace(':insertz:',zItem);
 
   if(customNameA.value !== '') {
